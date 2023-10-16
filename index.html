@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,16 +9,20 @@
         <h1 class="text-center">Calculadora de Juros Compostos</h1>
         <form class="text-center">
             <div class="form-group">
-                <label for="principal">Principal (P):</label>
-                <input type="number" id="principal" class="form-control" step="100" value="1000">
+                <label for="valorInicial">Valor Inicial (P):</label>
+                <input type="number" id="valorInicial" class="form-control" step="100" value="1000">
             </div>
             <div class="form-group">
                 <label for="taxaJuros">Taxa de Juros Anual (%):</label>
                 <input type="number" id="taxaJuros" class="form-control" step="0.01" value="5">
             </div>
             <div class="form-group">
-                <label for="tempo">Tempo (anos):</label>
+                <label for="tempo">Tempo:</label>
                 <input type="number" id="tempo" class="form-control" value="5">
+                <select id="tempoUnidade" class="form-control">
+                    <option value="anos">Anos</option>
+                    <option value="meses">Meses</option>
+                </select>
             </div>
             <button type="button" class="btn btn-primary" onclick="calcularJurosCompostos()">Calcular</button>
         </form>
